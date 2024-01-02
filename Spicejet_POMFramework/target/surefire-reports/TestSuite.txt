@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 49.77 sec <<< FAILURE!
+Check_Departure_Date_Selection(com.Test.BookingPageTest)  Time elapsed: 3.142 sec  <<< FAILURE!
+java.lang.ClassCastException: class jdk.proxy2.$Proxy11 cannot be cast to class org.openqa.selenium.WebElement (jdk.proxy2.$Proxy11 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
+	at com.pages.BookingPage.dateinner(BookingPage.java:127)
+	at com.Test.BookingPageTest.Check_Departure_Date_Selection(BookingPageTest.java:136)
+Check_Submit_Button_Clickble(com.Test.BookingPageTest)  Time elapsed: 16.303 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.isEnabled(Unknown Source)
+	at com.Test.BookingPageTest.Check_Submit_Button_Clickble(BookingPageTest.java:145)
+afterSuite(com.Test.BookingPageTest)  Time elapsed: 17.293 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MYPC-PC', ip: '192.168.43.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at com.Test.BookingPageTest.afterSuite(BookingPageTest.java:158)

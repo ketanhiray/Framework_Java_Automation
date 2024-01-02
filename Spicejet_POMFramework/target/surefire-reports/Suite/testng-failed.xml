@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Testutil.Listner"/>
+    <listener class-name="com.extentreport.ExtentReporter"/>
+  </listeners>
+  <test parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="com.Test.BookingPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="Check_Submit_Button_Clickble"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="Check_Departure_Date_Selection"/>
+        </methods>
+      </class> <!-- com.Test.BookingPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
